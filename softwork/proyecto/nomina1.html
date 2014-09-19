@@ -1,0 +1,591 @@
+
+<?php
+
+include_once "db_connect.inc";
+ // $link = mysql_connect("localhost","root","1234");
+// mysql_select_db("mundial", $link) or die ("no se ha podido establecer la conexion <br>"); 
+
+
+/*var_dump($_POST)*/
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from bootstrapstyler.com/preview/_/libero/element-form.html by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 09 Sep 2014 13:26:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>Hoja de vida</title>
+	<!-- BOOTSTRAPS -->
+	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- THEMES -->
+		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+			<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<link href="bootstrap/css/bootstrap.min994f.css?v=3.0.2" rel="stylesheet">
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	
+	<!--ICONS-->
+	<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<link href="fonts/font-awesome/css/font-awesome.minba72.css?v=4.0.3" rel="stylesheet">
+		
+
+			<link href="fonts/icomoon/style.css" rel="stylesheet">
+
+<link href="css/styler/style.css" rel="stylesheet" type="text/css">
+		<link href="css/demo.css" rel="stylesheet" type="text/css">
+	<!--FONTS-->
+	<link type='text/css'href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet'>
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Fugaz+One|Leckerli+One' rel='stylesheet'>
+	<!--JAVASCRIPTS-->
+	<script src="scripts/jquery-1.9.1.min.js"></script>
+	<script src="scripts/jquery-ui-1.10.1.custom.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<style >
+	
+</style>
+<body>
+				
+				
+	<div id="wrapper">
+<div id="sidebar">
+	<div class="inner">
+
+		<nav class="side-nav">
+			<ul class="nav nav-pills nav-stacked user-bar">
+				<li>
+					<a href="#user-menu" data-toggle="collapse" class="dropdown-toggle">
+						
+						<span>
+							<span class="user-name">Softwork</span>
+					
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+		
+	
+
+		<nav class="side-nav">
+			<ul class="nav nav-pills nav-stacked">
+				<li >
+					<a href="index.html">
+						<i class="fa fa-bars"></i>
+						Menu
+					</a>
+				</li>
+
+				<li>
+					<a href="#tasks" data-toggle="collapse" data-parent=".side-nav" class="collapsed">
+						<i class="fa fa-money"></i>
+						Nomina <b class="caret"></b>
+					</a>
+					<ul class="panel-collapse collapse " id="tasks">
+						<li ><a href=""><i class="fa fa-arrow-right"></i> Generar</a></li>
+						<li ><a href=""><i class="fa fa-arrow-right"></i> Consultar</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#messages" data-toggle="collapse" data-parent=".side-nav" class="collapsed">
+						<i class="fa fa-book"></i>
+						Hoja de Vida <b class="caret"></b>
+					</a>
+					<ul class="panel-collapse collapse " id="messages">
+						<li ><a href="Hoja de vida.html"><i class="fa fa-arrow-right"></i> Crear</a></li>
+						<li ><a href="Modificarhv.html"><i class="fa fa-arrow-right"></i> Modificar</a></li>
+						<li ><a href="Consultarhv.html"><i class="fa fa-arrow-right"></i> Consultar</a></li>
+					</ul>
+				</li>
+
+				
+
+			
+
+				<li>
+					<a href="#ui" data-toggle="collapse" data-parent=".side-nav" class="collapsed">
+						<i class="fa fa-calendar"></i>
+						Capacitacion <b class="caret"></b>
+					</a>
+					<ul class="panel-collapse collapse " id="ui">
+						<li >
+							<a href="Capacitacion.html">
+								<i class="fa fa-arrow-right"></i>
+								crear
+							</a>
+						</li>
+						<li >
+							<a href="typo.html">
+								<i class="fa fa-arrow-right"></i>
+								consultar
+							</a>
+						</li>
+
+						<li >
+							<a href="icons.html">
+								<i class="fa fa-arrow-right"></i>
+								modificar
+							</a>
+						</li>
+
+						
+						
+					</ul>
+				</li>
+
+				<li>
+					<a href="#pages" data-toggle="collapse" data-parent=".side-nav" class="collapsed">
+						<i class="fa fa-male"></i>
+						Entrada y salida <b class="caret"></b>
+					</a>
+					<ul class="panel-collapse collapse " id="pages">
+						<li ><a href="Entradaysalida.html"><i class="fa fa-arrow-right"></i>Consultar</a></li>
+				
+					</ul>
+				</li>
+
+				<li class="nav-header">Extra</li>
+		<li>
+			<a href="extra-login.html"><i class="icon-key"></i>Login</a>
+		</li>
+			</ul>
+		</nav>
+
+		
+	</div>
+</div>
+			<div id="middle">
+
+				<header id="header">
+				<nav class="navbar navbar-default">
+					<div class="navbar-switcher">
+						<button type="button" class="navbar-toggle" data-toggle="side-menu" data-target="#sidebar">
+							<span class="sr-only">Softwork</span>
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+
+				
+					<div class="navbar-header">
+						<a class="navbar-brand" id="brand" href="index-2.html"></a>
+					</div>
+
+					
+
+					<div class="collapse navbar-collapse" id="topnav">
+						<ul class="nav navbar-nav navbar-right">
+					
+					</div>
+				</nav>
+				</header>
+					<div class="frame">
+<div class="content">
+
+<div class="content">
+
+	
+	
+	<div class="content-body">
+		<section class="module">
+			<div class="module-head">
+				<ul class="module-control pull-left">
+					<li class="active">
+						<a href="#tab-1" data-toggle="tab">Crear Nomina</a></li>
+
+
+				</ul>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div class="tab">
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="tab-1">
+							<form class="form-horizontal">
+				   <div class="container-fluid">
+         <div class="">
+            <div class="form-group col-md-6  col-sm-4  col-xs-6">
+              <label>Seleccionar Nomina</label>
+              <select class="form-control">
+           </select>
+
+           <br><br>
+<div class="row">
+	
+			<div class="form-group col-md-3  col-sm-4  col-xs-6"></div>
+        <div class="form-group col-md-6  col-sm-4  col-xs-6">
+         <button type="button" class="btn btn-danger"
+          class="form-control">  Cargar empleados  </button>
+         <div class="form-group col-md-3  col-sm-4  col-xs-6"></div>
+</div>
+								
+							</form>
+							</div>
+							</div>
+							</div>
+							</div>
+						</section>
+						</div>
+	</div>
+								</div>
+						<div class="frame">
+<div class="content">
+
+							<div class="content-body">
+		<section class="module">
+			<div class="module-head">
+				<ul class="module-control pull-left">
+					<li class="active">
+						<a href="#tab-1" data-toggle="tab">Empleados</a></li>
+					
+				</ul>
+			</div><!--/.module-head-->
+			<div class="module-body">
+				<div class="tab">
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="tab-1">
+							<form class="form-horizontal">
+<h4><center>Tabla de Consultas</h4>
+					<div class="panel-body">
+						<div class="col-md-12 table-responsive">
+							<table class="table table-bordered table-striped table-hover table-condensed">
+								<thead>
+
+									<tr>
+										<th>
+											C.C Empleado
+										</th>
+										<th>
+											Nombre Empleado
+										</th>
+										<th>
+											Deduccibles
+										</th>
+<!-- 										<th>
+											Fecha inicio
+										</th>
+										<th>
+											Fecha Final
+										</th>
+										
+										<th>
+											Hora inicio
+										</th>
+										<th>
+											Hora final
+										</th>
+										<th>
+											Duracion
+										</th>
+										<th>
+											Otro Detalle
+										</th> -->
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Aplicadas en las filas -->
+									<tr>
+										<td>1017207151</td>
+										<td>Residuos Solidos</td>
+										<td>Jardin Botanico</td>
+										<!-- <td>01/01/01</td> -->
+										<td>01/02/01</td>
+										<td>08:00</td>
+										<td>17:00</td>
+										<td>11 horas</td>
+										<td>incluye alimentacion</td>
+
+									</tr>
+							<!-- 		<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									<!-- Aplicadas en las celdas (<td> o <th>) -->
+									<!-- <tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<ztd></td>
+										
+
+									</tr> --> -->
+								</tbody>
+							</table>
+							</ztd></tr></tbody></table></div></div></center>
+								
+								
+							</form>
+							</div>
+							</div>
+							</div>
+							</div>
+						</section>
+						</div>
+	</div>
+								</div>
+
+<script src="bootstrap/js/bootstrap.min994f.js?v=3.0.2"></script>
+
+	
+		<script src="js/styler/script.js"></script>
+
+
+
+
+<!-- WYSIHTML5 TEXT EDITOR -->
+<script src="scripts/wysihtml5/advanced.js"></script>
+<script src="scripts/wysihtml5/wysihtml5-0.3.0.min.js"></script>
+<!-- AUTOSIZE TEXTAREA -->
+<script src='scripts/autosize/jquery.autosize-min.js'></script>
+<!-- BOOTSTRAP DATEPICKER -->
+<script src="scripts/bootstrap-datepicker.js"></script>
+<!-- FLOT CHART -->
+<script src="scripts/flot/jquery.flot.js"></script>
+<script src="scripts/flot/jquery.flot.pie.js"></script>
+<script src="scripts/flot/jquery.flot.resize.js"></script>
+<!-- FULLCALENDAR -->
+<script src="scripts/fullcalendar/fullcalendar.custom.js"></script> -->
+<!-- MIXITUP -->
+<script src="scripts/mixitup/jquery.mixitup.min.js"></script>
+<!-- THEME -->
+<script src="scripts/theme.js"></script>
+<!-- SCRIPTS: FLOT GRAPH BASIC -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder"), 
+	[ { data: d1, label: "Data A" }, { data: d2, label: "Data B" } ], {
+		lines: { 
+			show: true, 
+			fill: false, 
+			lineWidth: 1,
+			lineColor: "#fc0" 
+		},
+		points: { 
+			show: true, 
+			lineWidth: 4 
+		},
+		grid: {
+			clickable: true,
+			hoverable: true,
+			autoHighlight: true,
+			mouseActiveRadius: 10,
+			aboveData: true,
+			backgroundColor: "#fafafa",
+			borderWidth: 0,
+			borderColor: "#fc0",
+			minBorderMargin: 25,
+		},
+		colors: [ "#090", "#099",  "#609", "#900"],
+		shadowSize: 0
+	});
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: FLOT GRAPH ADVANCE -->
+<script type="text/javascript">
+$(function () {
+	var d1 = [ [0, 1], [1, 14], [2, 5], [3, 4], [4, 5], [5, 1], [6, 14], [7, 5],  [8, 5] ];
+	var d2 = [ [0, 5], [1, 2], [2, 10], [3, 1], [4, 9],  [5, 5], [6, 2], [7, 10], [8, 8] ];
+
+	var plot = $.plot($("#placeholder2"),
+		   [ { data: d1, label: "Data Y"}, { data: d2, label: "Data X" } ], {
+				lines: { 
+					show: true, 
+					fill: true, /*SWITCHED*/
+					lineWidth: 2 
+				},
+				points: { 
+					show: true, 
+					lineWidth: 3
+				},
+				grid: {
+					clickable: true,
+					hoverable: true,
+					autoHighlight: true,
+					mouseActiveRadius: 10,
+					aboveData: true,
+					backgroundColor: "#fafafa",
+					borderWidth: 0,
+					minBorderMargin: 25,
+				},
+				colors: [ "#090", "#099",  "#609", "#900"],
+				shadowSize: 0
+			 });
+
+	function showTooltip(x, y, contents) {
+		$('<div id="gridtip">' + contents + '</div>').css( {
+			position: 'absolute',
+			display: 'none',
+			top: y + 5,
+			left: x + 5
+		}).appendTo("body").fadeIn(300);
+	}
+
+	var previousPoint = null;
+	$("#placeholder2").bind("plothover", function (event, pos, item) {
+		$("#x").text(pos.x.toFixed(2));
+		$("#y").text(pos.y.toFixed(2));
+
+		if (item) {
+			if (previousPoint != item.dataIndex) {
+				previousPoint = item.dataIndex;
+				
+				$("#gridtip").remove();
+				var x = item.datapoint[0].toFixed(0),
+					y = item.datapoint[1].toFixed(0);
+				
+				showTooltip(item.pageX, item.pageY,
+							"x : " + x + "&nbsp;&nbsp;&nbsp; y : " + y);
+			}
+		}
+		else {
+			$("#gridtip").remove();
+			previousPoint = null;            
+		}
+	});
+});
+</script>
+
+<!-- SCRIPTS: CHARTS -->
+<script>
+	// PREDEFINED DATA
+	var data = [
+					{ label: "Series1",  data: [[1,10]]},
+					{ label: "Series2",  data: [[1,30]]},
+					{ label: "Series3",  data: [[1,90]]}
+				];
+
+	// // DEFAULT
+	// $.plot($("#pie-default"), data, 
+	// {
+	// 	series: {
+	// 		pie: {
+	// 			show: true
+	// 		}
+	// 	}
+	// });
+
+	// DEFINE ACTIONS FOR pieHover & pieClick
+	function pieHover(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		$("#hover").html('<span>'+obj.series.label+' - '+percent+'%</span>');
+	}
+
+	function pieClick(event, pos, obj) 
+	{
+		if (!obj)
+					return;
+		percent = parseFloat(obj.series.percent).toFixed(2);
+		alert(''+obj.series.label+': '+percent+'%');
+	}
+
+	// DONUT
+	$.plot($("#pie-donut"), data, 
+	{
+		series: {
+			pie: { 
+				innerRadius: 50,
+				show: true
+			}
+		}
+	});
+
+	// DONUT + INTERACTIVE
+	$.plot($("#pie-interactive"), data,
+	{
+			series: {
+				pie: {
+					innerRadius: 50,
+					show: true
+				}
+			},
+			grid: {
+				hoverable: true,
+				clickable: true
+			}
+	});
+
+	$("#pie-interactive").bind("plothover", pieHover);
+	$("#pie-interactive").bind("plotclick", pieClick);
+</script>
+</body>
